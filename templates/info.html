@@ -1,0 +1,94 @@
+<title>
+	Info
+</title>
+
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+<meta http-equiv='refresh' content='10' url='/info'>
+
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0d6efd; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0756cb; 
+}
+</style>
+
+<nav class="navbar navbar-expand-lg bg-primary  bg-gradiant">
+  <div class="container-fluid">
+         <a class="navbar-brand" href="#">|PhoneNet|</a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded=>
+        <span class="navbar-toggler-icon">
+        </span>
+        </button> <div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav">
+        <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/">|{{ home }}|</a>
+        </li>
+
+        <li class="nav-item">
+                <a class="nav-link" href="/server">|{{ server }}|</a>
+        </li>
+
+        <li class="nav-item">
+                <a class="nav-link active" href="/info">|{{ info }}|</a>
+        </li>
+ </ul>
+ </div>
+ </div>
+</nav>
+
+
+<div class="container">
+	<div class="text-center mt-5">
+		<h1>
+			System Information
+		</h1>
+<br>
+		<h4 class="mb-0">
+     CPU: Unisoc SC9863a (8) @ 1.200GHz
+<br>
+     RAM:       2GB + 1Gb Swap
+<br>
+     Android: 10
+<br>
+<br>
+     Ram Usage: {{ ram }}% / 100%
+<br>
+     Swap Usage: {{ swap }}% / 100%
+<br>
+<br>
+     Total Usage: {{ total }}% / 100%
+		</h4>
+  </div>
+</div>
+
+
+<div class="text-center mt-5">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+	<blackquote class="blockquote">
+		<footer class="blockquote-footer">Made with ♥ by {{ footername }}</footer>
+	</blackquote>
+<div>
